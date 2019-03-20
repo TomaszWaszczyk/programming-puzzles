@@ -1,0 +1,8 @@
+#theMenu { 
+	width: 400px; 
+}
+
+ul li a.menuLink {
+	display: block;
+	padding-left: 30px;
+}

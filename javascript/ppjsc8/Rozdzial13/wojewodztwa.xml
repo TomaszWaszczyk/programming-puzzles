@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"?>
+<choices xml:lang="PL">
+  <item><label>Dolnośląskie</label><value>DS</value></item>
+  <item><label>Kujawsko-pomorskie</label><value>KP</value></item>
+  <item><label>Lubuskie</label><value>LB</value></item>
+  <item><label>Łódzkie</label><value>LD</value></item>
+  <item><label>Lubelskie</label><value>LU</value></item>
+  <item><label>Mazowieckie</label><value>MA</value></item>
+  <item><label>Małopolskie</label><value>MP</value></item>
+  <item><label>Opolskie</label><value>OP</value></item>
+  <item><label>Podlaskie</label><value>PD</value></item>
+  <item><label>Podkarpackie</label><value>PK</value></item>
+  <item><label>Pomorskie</label><value>PM</value></item>
+  <item><label>Świętokrzyskie</label><value>SW</value></item>
+  <item><label>Ślaskie</label><value>SL</value></item>
+  <item><label>Warminsko-mazurskie</label><value>WM</value></item>
+  <item><label>Wielkopolskie</label><value>WP</value></item> 
+  <item><label>Zachodniopomorskie</label><value>ZP</value></item>
+</choices>

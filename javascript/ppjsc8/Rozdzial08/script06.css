@@ -1,0 +1,33 @@
+body {
+	background-color: #FFF;
+}
+
+#lEye, #rEye {
+	position: absolute;
+	top: 100px;
+	width: 24px;
+	height: 25px;
+}
+
+#lDot, #rDot {
+	position: absolute;
+	top: 113px;
+	width: 4px;
+	height: 4px;
+}
+
+#lEye {
+	left: 100px;
+}
+
+#rEye {
+	left: 150px;
+}
+
+#lDot {
+	left: 118px;
+}
+
+#rDot {
+	left: 153px;
+}

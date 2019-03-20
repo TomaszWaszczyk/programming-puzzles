@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A Gentle Introduction to JavaScript #4</title>
+</head>
+<body>
+<h1>Multiple Image Rollovers</h1>
+
+<p>by Dori Smith</p>
+
+<p>In my previous column, I showed how to do a simple image rollover. In the real world, however, it's rare that you're going to ever have just one rollover on a page. In this column, we'll cover how to add multiple rollovers to your Web page. Let's start off by looking at the code (which you can see in action <a href="rollovers.html">here</a>):</p>
+
+<pre>
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Rollover Script&lt;/title&gt;
+	&lt;script&gt;
+		&lt;!-- Hide script from older browsers
+
+		if (document.images) {
+			button1Red = new Image
+			button1Blue = new Image
+			button2Red = new Image
+			button2Blue = new Image
+
+			button1Red.src = "images/redButton1.gif"
+			button1Blue.src = "images/blueButton1.gif"
+			button2Red.src = "images/redButton2.gif"
+			button2Blue.src = "images/blueButton2.gif"
+		}
+	
+		function chgImg(imgField,newImg) {
+			if (document.images) {
+				document[imgField].src = eval(newImg + ".src")
+			}
+		}
+
+		// End hiding script from older browsers --&gt;
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;p&gt;&lt;a href="#" onMouseover="chgImg('button1','button1Red')"
+	onMouseout="chgImg('button1','button1Blue')"&gt;&lt;img src="images/blueButton1.gif"
+	width="113" height="33" id="button1" alt="button1"&gt;&lt;/a&gt;&lt;/p&gt;
+	&lt;p&gt;&lt;a href="#" onMouseover="chgImg('button2','button2Red')"
+	onMouseout="chgImg('button2','button2Blue')"&gt;&lt;img src="images/blueButton2.gif"
+	width="113" height="33" id="button2" alt="button2"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p>If you've read my previous column, most of this should look pretty familiar. If not, go back and review it first.</p>
+
+<pre>
+if (document.images) {
+	button1Red = new Image
+	button1Blue = new Image
+	button2Red = new Image
+	button2Blue = new Image
+
+	button1Red.src = "images/redButton1.gif"
+	button1Blue.src = "images/blueButton1.gif"
+	button2Red.src = "images/redButton2.gif"
+	button2Blue.src = "images/blueButton2.gif"
+}
+</pre>
+
+<p>This code is similar to that from last time, except that now, we've gone from two image objects to four. You'll need to have two image objects per rollover, so where previously we had two image objects to handle one rollover, we now need four image objects to handle the two rollovers in this example. Two image objects are needed because two different images are displayed per rollover: the on version, and the off version.</p>
+
+<p>In this area of the code, we start by creating the four new image objects, and then the <code>src</code> (read as "source") property of each is initialized to the location of the image file itself, relative to the web page. As always, we only want to do this if the browser itself supports image manipulation via JavaScript, so we start off by checking to see if <code>document.images</code> exists.</p>
+
+<pre>
+function chgImg(imgField,newImg) {
+</pre>
+
+<p>Here, we start to create our first JavaScript function. A <i>function</i> is a group of lines of code that you're going to want to use over and over again. You define a function by starting with the word <code>function</code> followed by the name of the function, in this case, <code>chgImg</code>.</p>
+
+<p>The name of the function is followed by a set of parentheses, and inside the parentheses are zero or more parameters. A <i>parameter</i> is some information passed into the function for the function to act upon, and the parameters are separated by commas. In this case, we're passing two parameters, <code>imgField</code> and <code>newImg</code>. When the <code>chgImg</code> function is called (as you'll see later) it can be passed any string values as parameters, but inside the function the parameters are always referred to by these names.</p>
+
+<p>The function then starts off with an open brace, just like the way the code is contained within an <code>if</code> statement and for the same reason: everything within the braces is what's going to be executed by JavaScript.</p>
+
+<pre>
+if (document.images) {
+</pre>
+
+<p>Again, we only want to do the code inside this function if the user's browser is capable of handling images via JavaScript.</p>
+
+<pre>
+document[imgField].src = eval(newImg + ".src")
+</pre>
+
+<p>Here's where the rollover actually happens.</p>
+
+<p>The <code>imgChg</code> function is passed two parameters: <code>imgField</code> and <code>newImg</code>. The former is the name of the image to be changed, and the latter is the image object that is to replace is. We're using a handy little JavaScript trick here, in that JavaScript thinks that <code>document.myButton</code> is the same thing as <code>document["myButton"]</code>.  Because of this, changing <code>document["myButton"].src</code> is exactly the same thing as changing <code>document.myButton.src</code> (as we did in the previous column).</p>
+
+<p>On the right side of the assignment statement, we're creating an image object on the fly by using JavaScript's <code>eval</code> method. This method takes in a string, evaluates it (hence the name eval), and returns a result of that string turned into an object. So, if <code>newImg</code> is the string <code>"redButton"</code>, we take that and concatenate the string <code>".src"</code> onto the end of it, resulting in the string <code>"redButton.src"</code>. The <code>eval</code> method then evaluates that string, and returns the actual image object <code>redButton.src</code>. </p>
+
+<p>Setting <code>document["myButton"].src</code> to <code>redButton.src</code> would cause the red version of <code>myButton</code> to appear, assuming that there was an image named myButton on the page, and that <code>redButton</code> had been created as a new image and the <code>src</code> property had been set to the appropriate image file.</p>
+
+<pre>
+&lt;a href="#" onMouseover="chgImg('button1','button1Red')"
+onMouseout="chgImg('button1','button1Blue')"&gt;&lt;img src="images/blueButton1.gif"
+width="113" height="33" name="button1" alt="button1"&gt;&lt;/a&gt;
+</pre>
+
+<p>Here's the actual image on the Web page, which has been given the name button1. The chgImg function is called by both the <code>onMouseover</code> and <code>onMouseout</code> event handlers, both of which pass <code>'button1'</code> as their first parameter. The second parameter is the version of the button that we want to display after the event has taken place, and so, <code>onMouseover</code> passes <code>'button1Red'</code> in this place. This means that whenever the user's cursor moves over the <code>button1</code> image, the red version of the button (as stored in <code>button1Red.src</code>, above) will be displayed. And as you might expect by this point, the <code>onMouseout</code> event handler passes <code>'button1Blue'</code> as its second parameter, which will cause the blue version of the button to be redisplayed when the cursor moves off of <code>button1</code>.</p>
+
+<pre>
+&lt;a href="#" onMouseover="chgImg('button2','button2Red')"
+onMouseout="chgImg('button2','button2Blue')"&gt;&lt;img src="images/blueButton2.gif"
+width="113" height="33" name="button2" alt="button2"&gt;&lt;/a&gt;
+</pre>
+
+<p>And here's the last piece of code, which looks very similar to the previous piece. The only differences are in the name of the image itself (which is then passed as the first parameter to the <code>imgChg</code> function), and the appropriate red or blue image object for the second button, which is passed as the second parameter to <code>imgChg</code>.</p>
+
+<p>In this same fashion, you can add as many buttons to the page as you want. All you need to do is create two new image objects in the head (and set them to the correct file names), and then add your <code>anchor</code> and <code>img</code> tags directly to the page.</p>
+
+</body>
+</html>

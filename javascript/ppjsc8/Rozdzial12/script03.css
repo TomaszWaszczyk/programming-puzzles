@@ -1,0 +1,39 @@
+body {
+	background-color: #FFF;
+	color: #000;
+}
+
+div {
+	margin-bottom: 10px;
+	width: 20em;
+	background-color: #9CF;
+	float: left;
+}
+
+ul.menu {
+	display: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li {
+	font: 1em arial, helvetica, sans-serif;
+	padding-left: 10px;
+}
+
+a.menuLink, li a {
+	text-decoration: none;
+	color: #006;
+}
+
+a.menuLink {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+ul.menu li a:hover {
+	background-color: #006;
+	color: #FFF;
+	padding-right: 10px;
+}

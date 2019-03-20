@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A Gentle Introduction to JavaScript #3</title>
+</head>
+<body>
+<h1>The Simple Image Rollover</h1>
+<p>by Dori Smith</p>
+
+<p>The most commonly used JavaScript effect is the image rollover. For the one person on the web who's never seen it before, an image rollover is what you get when you move your cursor over an image, and voila! the image changes.</p>
+
+<p>Many people who have been happily coding HTML by hand start to think about buying a WYSIWYG web editor when they start trying to write their first image rollover. Thankfully, using JavaScript to create this effect isn't that difficult. Here's the code:</p>
+
+<pre>
+&lt;html&gt;
+&lt;head&gt;
+	&lt;title&gt;Rollover Script&lt;/title&gt;
+	&lt;script&gt;
+		&lt;!-- Hide script from older browsers
+
+		if (document.images) {
+			offButton = new Image
+			onButton = new Image
+			
+			offButton.src = "images/blueButton.gif"
+			onButton.src = "images/redButton.gif"
+		}
+		else {			
+			offButton = ""
+			onButton = ""
+		
+			document.myButton = ""
+		}
+
+		// End hiding script from older browsers --&gt;
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;a href="#" onMouseover="document.myButton.src=onButton.src" 
+    onMouseout="document.myButton.src=offButton.src"&gt;&lt;img src="images/blueButton.gif"
+    alt="button" width="119" height="25" id="myButton"&gt;&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<p>To start with, you'll need two identically sized, non-transparent buttons. In this example, they're called <code>blueButton.gif</code> and <code>redButton.gif</code>. The former is displayed when the cursor is anywhere on the screen except on top of the button itself. If the cursor is on the button, then the latter version is displayed.</p>
+
+<p>For this example, I'm assuming that you've already read <a href="2000-08.html" title="Your First Script">my previous column</a>. I'm not explaining the parts of this web page that I covered in that article, so if you think this is going too quickly, you might want to go back and review those concepts again.</p>
+
+<p>To start, we add just one image to the page:</p>
+
+<pre>&lt;img src="images/blueButton.gif" alt="button" width="119" height="25" id="myButton"&gt;</pre>
+
+<p>The only differences that you should see between this and the normal garden-variety images you've been adding to your HTML all along is a new attribute: <code>name</code>. JavaScript uses the value of the name attribute to be able to refer to this image later. In this case, we're going to name this image <code>myButton</code>, which will later be referred to as <code>document.myButton</code>. Names can't have spaces or start with numbers; beyond those limitations you can call them just about anything you'd like.</p>
+
+<p>Up at the top of the page, inside the <code>&lt;head&gt;</code> section, is a <code>&lt;script&gt;</code> section that contains the JavaScript code that sets up our rollover effect. We'll go through it a little at a time.</p>
+
+<pre>if (document.images) {</pre>
+
+<p>This line sets up the whole rollover magic. In order for a browser to display image rollovers, it needs to have some smarts. It not only has to be smart enough to understand JavaScript, but it also has to be smart enough to understand how to manipulate images. Some browsers, such as Netscape 2 and IE 3, knew a little about JavaScript (enough to get into trouble), but couldn't handle image effects. This line checks to see if JavaScript knows about any images on the page. If it does, just the lines of code between the first set of braces {} will be run. If JavaScript doesn't know about images, everything in the first set of braces will be skipped, and everything in the second set of braces (those following the <code>else</code>) will execute instead.</p>
+
+<pre>
+offButton = new Image
+onButton = new Image
+</pre>
+
+<p>Assuming that we have a browser that's reasonably smart, JavaScript then creates two image objects, <code>offButton</code> and <code>onButton</code>. An image object isn't necessarily something displayed on the screen, instead, it's something that JavaScript stores in its memory for later use. Here we'll need two of them, for the two different versions of the button.</p>
+
+<pre>
+offButton.src = "images/blueButton.gif"
+onButton.src = "images/redButton.gif"
+</pre>
+
+<p>This is where the image objects in memory learn about the actual physical files they're associated with. In each case, we set the <code>src</code> (read as "source") property of the image object to the location of the file on the drive. The src property of the image object is set in exactly the same way as the src attribute of the img tag, and with the same effect. In this example, the off version of the button is set to the blue version of the image, and the on version of the button is set to the red version of the image.</p>
+
+<p>Have you ever been to a web site where you move the cursor over an image, and suddenly a new image starts to download? And you wait a few seconds, and then suddenly a new version appears? A properly written image rollover will pre-cache the images. In other words, it will be written to download all the images that might be displayed into the browser's cache when the page first loads. Then if, if the user moves the cursor over a button, the new version will display immediately.</p>
+
+<p>These two lines handle the pre-caching for you. So long as you refer to those images by the names of the image objects that JavaScript knows about, the new images will display immediately.</p>
+
+<pre>
+offButton = ""
+onButton = ""
+
+document.myButton = ""
+</pre>
+
+<p>Now we're in the section of code for the older browsers that understand some JavaScript, but not enough to handle a rollover. In this case, we want to create some dummy variables, so that when we start to manipulate the images, these browsers will think that they can handle the commands. The dummy variables here are set to zero-length strings, or in other words, nothing at all &mdash; it's enough for JavaScript that they exist. When the old browsers then try to change these variables, nothing will actually happen, but they won't produce errors either. In this case, the three variables that the browsers need to know about are <code>offButton</code>, <code>onButton</code>, and <code>document.myButton</code>: the off version of the image, the on version of the image, and the image that's actually displayed in the browser.</p>
+
+<pre>&lt;a href="#" onMouseover="document.myButton.src=onButton.src" onMouseout="document.myButton.src=offButton.src"&gt;</pre>
+
+<p>This is the last piece of the puzzle: the anchor tag around the img tag. It has two new attributes: <code>onMouseover</code> and <code>onMouseout</code>. These are JavaScript event handlers, which means that when an event happens, JavaScript will catch it and do whatever you've said.</p>
+
+<p>When the cursor moves over the image, the <code>onMouseover</code> event hander is triggered. That causes the line of code <code>document.myButton.src=onButton.src</code> to be run. If you recall, because we named our image <code>myButton</code>, we created a new image object <code>document.myButton</code>. In order to change the image that's displayed, we need to update the <code>src</code> (again, the source) property of this image. Because this is the moused-over version, we set <code>document.myButton.src</code> to <code>onButton.src</code>, the red (on) version of the button image.</p>
+
+<p>When the cursor moves off the image, the <code>onMouseout</code> event handler is triggered. That causes the line of code <code>document.myButton.src=offButton.src</code> to be run. As you'd expect by now, it sets <code>document.myButton.src</code> to <code>offButton.src</code>, the blue (off) version of the button image.</p>
+
+<p>If we have a JavaScript-savvy browser that doesn't understand images, it will still catch those event handlers. It then tries to set <code>document.myButton.src</code> to <code>offButton.src</code> (or <code>onButton.src</code>, as the case may be). For these browsers, those objects have been set to be empty strings, so JavaScript happily sets empty strings to empty strings and goes on its way. If we hadn't set those dummy variables above, those bad browsers would display error messages any time an event they were handling attempted to change an object the browser hadn't previously been told about.</p>
+
+<p>Here's <a href="rollover.html">the code in action</a>.</p>
+
+<p>This code can be used to handle multiple buttons on a page, of course. You just need to give each button a name (using the <code>name</code> attribute of the <code>img</code> tag), and create two new image objects per new button in the header script. And make sure that all those names are unique &mdash; that's one of the main errors that occur when you copy and paste a bunch of code to duplicate existing scripts.</p>
+
+<p>Now that you've seen how simple adding a rollover image can be, aren't you glad you didn't spend several hundred dollars on a WYSIWYG tool? On the other hand, those expensive programs do try to give you your money's worth: a page like this done with a tool would result in at least 3 times the code, with no extra benefit. This way, your code is cleaner and your page loads faster, and best of all: you know how it works.</p>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wybierz samochód</title>
+	<link rel="stylesheet" href="script06.css">
+	<script src="script08.js"></script>	
+</head>
+<body>
+<h2 class="centered">Wybierz samochód</h2>
+<form action="someAction.cgi">
+  <p><label for="emailAddr">Adres e-mail:
+    <input id="emailAddr" type="text" size="30" class="reqd email" />
+  </label></p>
+  <p><label for="color">Kolory:
+    <select id="color" class="reqd">
+      <option value="" selected="selected">Wybierz kolor</option>
+      <option value="Red">Czerwony</option>
+      <option value="Green">Zielony</option>
+      <option value="Blue">Niebieski</option>
+    </select>
+  </label></p>
+  <p>Opcje:
+    <label for="sunroof"><input type="checkbox" id="sunroof" value="Yes" />Kabriolet      (tylko wersja dwudrzwiowa)</label>
+    <label for="pWindows"><input type="checkbox" id="pWindows" value="Yes" />Wzmacniane 
+    okna</label>
+  </p>
+  <p><label for="DoorCt">Liczba drzwi:&nbsp;&nbsp;
+    <input type="radio" id="twoDoor" name="DoorCt" value="twoDoor" class="radio" />Dwoje
+    <input type="radio" id="fourDoor" name="DoorCt" value="fourDoor" class="radio" />Czworo
+  </label></p>
+  <p><label for="zip">Podaj kod pocztowy i wybierz najbliższego sprzedawcę:<br />
+  Kod pocztowy: <input id="zip" type="text" size="5" maxlength="5" class="isZip dealerList" />
+    <select id="dealerList" size="4" class="zip">
+      <option value="Gliwice-Sikornik">Gliwice--os. Sikornik</option>
+      <option value="Gliwice-Tarnogorska">Gliwice--ul. Tarnogórska</option>
+      <option value="Knorow">Knurów</option>
+      <option value="Gieraltowice">Gierałtowice</option>
+      <option value="Toszek">Toszek</option>
+    </select>
+  </label></p>
+  <p><input type="submit" value="Wyślij" />&nbsp;<input type="reset" value="Wyczyść"/></p>
+</form>
+</body>
+</html>

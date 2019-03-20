@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A Gentle Introduction to JavaScript #2</title>
+</head>
+<body>
+
+<h1>Your First Script</h1>
+<p>by Dori Smith</p>
+
+<p>It's a <a href="http://www.latech.edu/~acm/HelloWorld.shtml">long-standing tradition</a> in the coding world that the first thing you write in any new programming language should always display "Hello, World!" I'm not out to upset tradition here, so that's what we'll start with, too.</p>
+
+<pre>&lt;html&gt;
+   &lt;head&gt;
+      &lt;title&gt;
+         My first script
+      &lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+      &lt;script&gt;
+         &lt;!-- Hide script from older browsers
+
+         document.write("Hello, World!")
+
+         // End hiding script from old browsers --&gt;
+      &lt;/script&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<p>If you're familiar with HTML tags, most of this should look pretty familiar. But for those who aren't, I'll start from the top.</p>
+
+<pre>&lt;html&gt;</pre>
+
+<p>This tag tells the browser that what's coming up is HTML, which the browser should understand. The way browsers tell the difference between what on your page is a tag and what is text that should be displayed is by surrounding the tag with angle brackets: <code>&lt;</code> and <code>&gt;</code>. Anything inside these characters is a command to the browser.</p>
+
+<pre>&lt;head&gt;</pre>
+
+<p>This starts the beginning of the <code>&lt;head&gt;</code> section of the HTML page. Here's where things (like the title of the page) are defined once for the entire page. Most of our future scripts will be put into the <code>&lt;head&gt;</code> area.</p>
+
+<pre>
+&lt;title&gt;
+    My first script
+&lt;/title&gt;
+</pre>
+
+<p>These lines tell the browser the title of the page: "My first script". The title section is enclosed within beginning and ending <code>&lt;title&gt;</code> tags. An ending tag looks just like a beginning tag, with one difference: it starts with <code>&lt;/</code> instead of <code>&lt;</code>.</p>
+
+<pre>&lt;/head&gt;</pre>
+
+<p>And so ends the <code>&lt;head&gt;</code> part of the HTML page. In the same way that <code>&lt;/title&gt;</code> ended the title section, <code>&lt;/head&gt;</code> ends the head section.</p>
+
+<pre>&lt;body&gt;</pre>
+
+<p>As you'd probably guess by now, this starts the body section of the HTML page. This area contains everything all the text and images that are displayed on the page itself. In this particular case, our goal is to write text into the web page, so our script goes into the body area.</p>
+
+<pre>&lt;script&gt;</pre>
+
+For those who were familiar with HTML tags, here's where you need to jump back in.
+
+The <code>&lt;script&gt;</code> tag tells the browser that what follows (up until the ending tag) is a script. If a browser doesn't understand JavaScript, it's supposed to just ignore everything inside the <code>&lt;script&gt;</code> tags.
+
+There are two more things inside this tag; they're what are called attributes. In this case, they're the language and type attributes of the script tag, and they're required by the W3C for this to be a valid HTML page. They're each assigned a value, and together they tell the browser that it should expect the next few lines to be JavaScript text.
+
+<pre>&lt;!-- Hide script from older browsers</pre>
+
+Remember how I just said that browsers that don't understand JavaScript are supposed to skip everything inside the <code>&lt;script&gt;</code> tags? Well, unfortunately, some don't. In fact, some of them have the bad habit of assuming that everything inside these tags is text that you want to display in the browser window. The result, as you might expect, is ugly. Real ugly.
+
+This line is for those browsers. It starts off as a long-form HTML comment, with "<code>&lt;!--</code>". If the browser thinks that this is HTML, it will ignore everything from here up until it sees the end to this comment. Because of this, you'll want this to always be the very first line right after the <code>&lt;script&gt;</code> tag. However, for smarter browsers that understand that we're in the middle of some JavaScript, this same line is just a single line comment. JavaScript will ignore everything on this line up until the first hard return.
+
+<pre>document.write("Hello, World!")</pre>
+
+<p>Here's our first (and only) line of actual JavaScript. It calls the write() method of the document object, and passes it the phrase "Hello, World!" as a parameter.</p>
+
+<p>Okay, let's try that again, but in English this time.</p>
+
+<p>We start off with something that JavaScript calls a <i>document</i>. Put simply, a document is just a web page. Things that JavaScript knows about are called <i>objects</i>, so document is an object.</p>
+
+<p>If we want to write something on this web page, the command to do this is called write. A command that does something is called a <i>method</i>, and methods are applied to objects. You can always tell a method because it's followed by a set of parenthesis. If it helps, you can think of objects as nouns and methods as verbs, and when you put the two together, you can make something happen.</p>
+
+<p>JavaScript uses what's called <i>dot syntax</i> to put its pieces together. That means that objects and their associated methods are separated by periods (dots). So when you see <code>document.write()</code>, you know that the <code>write()</code> method is associated with the <code>document</code> object.</p>
+
+<p>Okay, now that we're writing something, what are we going to write? That's where those parentheses come into use. Whatever is inside the parentheses will be written out to our web page, and in this case that's "Hello, World!" Anything can be given to (passed to) <code>write()</code>, from a piece of text to another object entirely. In order for JavaScript to know that it's a bit of text that we want to write, we put the text inside quotation marks (straight ones, because browsers don't understand curly quotes). Whatever's passed to <code>write()</code> is known as a <i>parameter</i>.</p>
+
+<p>So, once again: JavaScript calls the <code>write()</code> method of the <code>document</code> object, and passes it the phrase "Hello, World!" as a parameter. And when that's done, you'll see the words written inside your browser window.</p>
+
+<pre>// End hiding script from old browsers --&gt;</pre>
+
+<p>Here's where those older browsers that don't understand JavaScript end up. The first two characters <code>//</code> are another way of telling JavaScript to ignore everything on this line as a comment. But those older browsers are still looking for the ending half of that long-form comment, and that's what this line ends with. So long as this is the very last line before the <code>&lt;/script&gt;</code> tag, everything inside will be seen as just one big HTML comment.</p>
+
+<pre>&lt;/script&gt;</pre>
+
+<p>As you'd expect by now, this is the end of the script section.</p>
+
+<pre>&lt;/body&gt;</pre>
+
+<p>Here's the end of the body section.</p>
+
+<pre>&lt;/html&gt;</pre>
+
+<p>And here's the end of the entire web page. This should be the very last bit of text on your HTML page.</p>
+
+<p>By the way, how you indent your code doesn't matter &mdash; in fact, you don't have to indent it at all. I've done it in the example above simply to make it easy to see where tags begin and end. I recommend that you use a similar style in your own scripts, as it's very helpful when you're trying to figure out where you've made a mistake.</p>
+
+<p>Wow &mdash; all that just to put a couple of words on the page? Actually, while this particular example may not accomplish much by itself, but it does help to demonstrate a large number of important concepts. You'll see these same concepts being used over and over again in upcoming JavaScript columns.</p>
+
+</body>
+</html>

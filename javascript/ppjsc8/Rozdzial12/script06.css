@@ -1,0 +1,46 @@
+body {
+	background-color: #FFF;
+	color: #000;
+	font-size: 12px;
+}
+
+#chartType {
+	float: left;
+	width: 200px;
+}
+
+.vert {
+	text-align: center;
+	vertical-align: bottom;
+}
+
+th {
+	font-size: 16px;
+	padding-left: 20px;
+	padding-right: 15px;
+}
+
+.vert th {
+	border-left: 1px #000 solid;
+	border-bottom: 1px #000 solid;
+	padding-bottom: 20px;
+}
+
+.horiz th {
+	border-right: 1px #000 solid;
+}
+
+.horiz img {
+	height: 15px;
+	vertical-align: bottom;
+}
+
+.vert img {
+	width: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+tr.vert + tr.vert {
+	padding-bottom: 20px;
+}

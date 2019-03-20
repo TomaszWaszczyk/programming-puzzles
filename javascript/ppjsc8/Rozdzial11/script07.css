@@ -1,0 +1,22 @@
+body {
+	background-color: #FFF;
+}
+
+#annoyingAdvert {
+	position: absolute;
+	z-index: 2;
+	display: none;
+	width: 100px;
+	background-color: #FFC;
+	padding: 10px;
+	margin: 10px;
+	border: 5px solid yellow;
+}
+
+#closeBox {
+	position: absolute;
+	color: red;
+	font-size: 1.5em;
+	top: 0;
+	right: 0;
+}

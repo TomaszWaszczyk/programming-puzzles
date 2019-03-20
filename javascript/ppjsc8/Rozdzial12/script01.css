@@ -1,0 +1,19 @@
+body {
+	background-color: #FFF;
+	color: #000;
+}
+
+div {
+	margin-bottom: 10px;
+}
+
+ul.menu {
+	display: none;
+	list-style-type: none;
+	margin-top: 5px;
+}
+
+a.menuLink {
+	font-size: 16px;
+	font-weight: bold;
+}

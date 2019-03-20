@@ -1,0 +1,28 @@
+#sortable {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 820px;
+}
+
+#sortable li {
+	margin: 3px;
+	padding: 3px;
+	float: left;
+}
+
+#sortable li img {
+	width: 256px;
+	height: 192px;
+}
+
+h1 a {
+	float: right;
+	display: inline-block;
+	font-size: .8em;
+	padding: 8px;
+	text-decoration: none;
+	background-color: silver;
+	border: 1px solid gray;
+	margin: -5px 25px 0 0;
+}

@@ -1,0 +1,30 @@
+body {
+	background-color: #EC9;
+}
+
+img {
+	border-width: 0;
+}
+
+#captionDiv {
+	float: right;
+	width: 210px;
+	margin: auto 50px;
+}
+
+#captionField {
+	margin: 20px auto;
+	width: 208px;
+	height: 27px;
+}
+
+#inventionDiv {
+	width: 375px;
+	margin-left: 20px;
+}
+
+#heading {
+	margin-bottom: 20px;
+	width: 375px;
+	height: 26px;
+}
