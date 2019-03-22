@@ -47,7 +47,7 @@ let output = (function(x) {
 Array(16).join( 'hero'-1) + "Batman";
 
 
-// 10
+// 10 - parseFloat works great but parseInt..
 ['06','08','10','12','14'].map(parseInt)
 
 
