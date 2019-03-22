@@ -46,5 +46,10 @@ let output = (function(x) {
 // 9
 Array(16).join( 'hero'-1) + "Batman";
 
+
 // 10
+['06','08','10','12','14'].map(parseInt)
+
+
+// 11
 
