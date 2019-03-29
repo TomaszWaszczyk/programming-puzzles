@@ -52,4 +52,26 @@ Array(16).join( 'hero'-1) + "Batman";
 
 
 // 11
+var generator = function*(a,b) {
+    while (true) {
+        yield a+b;
+        yield a*b ;
+        yield 3;
+    yield null;
+    b=2
+    yield a+b;
+    }
+};
+var iterable = generator(2,5);
+for (let x of iterable) {
+    if (x === 4) break;
+    console.log(x)
+}
+
+
+// 12
+[1,2] + [3,4]
+
+
+// 13
 
