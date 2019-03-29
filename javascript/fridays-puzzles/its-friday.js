@@ -1,3 +1,4 @@
+// https://github.com/denysdovhan/wtfjs
 // 0
 -!~ -~1 
 
