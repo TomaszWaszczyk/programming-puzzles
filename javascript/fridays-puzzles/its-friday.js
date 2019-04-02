@@ -75,4 +75,5 @@ for (let x of iterable) {
 
 
 // 13
-
+let array = [[]]
+arr.length = ?
