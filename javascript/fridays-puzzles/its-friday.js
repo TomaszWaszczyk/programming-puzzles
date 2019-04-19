@@ -77,3 +77,24 @@ for (let x of iterable) {
 // 13
 let array = [[]]
 array.length = ?
+
+
+// 14
+var x = '5' + 2
+var y = '5' - 2
+
+
+// 15
+interface X {
+  a: number
+  b: string
+}
+
+type X = {
+  a: number
+  b: string
+};
+
+
+// 16
+(61453).toString(16)
