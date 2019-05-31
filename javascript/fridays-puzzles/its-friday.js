@@ -108,3 +108,9 @@ console.log(newObj)
 // { firstName: 'Foo', age: 22, lastName: 'Bar', gender: 'M', planet: 'Earth' }
 
 
+// 18 - https://codeburst.io/a-simple-guide-to-destructuring-and-es6-spread-operator-e02212af5831
+const address = [221, 'Baker Street', 'London'];
+const [ houseNo, , city ] = address;
+console.log(houseNo, city)
+// 221 'London'
+
