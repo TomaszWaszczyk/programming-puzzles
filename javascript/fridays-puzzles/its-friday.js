@@ -98,3 +98,13 @@ type X = {
 
 // 16
 (61453).toString(16)
+
+
+// 17
+const obj1 = { firstName: 'Foo', age: 22 };
+const obj2 = { lastName: 'Bar', gender: 'M' };
+const newObj = { ...obj1, ...obj2, planet: 'Earth' };
+console.log(newObj)
+// { firstName: 'Foo', age: 22, lastName: 'Bar', gender: 'M', planet: 'Earth' }
+
+
