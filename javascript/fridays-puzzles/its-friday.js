@@ -114,3 +114,9 @@ const [ houseNo, , city ] = address;
 console.log(houseNo, city)
 // 221 'London'
 
+
+// 19
+const numbers = [1, 2, 3];
+const [ firstNumber, ...restOfTheNumbers ] = numbers;
+console.log(firstNumber, restOfTheNumbers);
+// 1 [ 2, 3 ]
