@@ -1,5 +1,7 @@
 # programmingExperiments
 
+https://devhints.io/
+
 http://martinfowler.com/eaaCatalog/
 
 https://codingpuzzles.com/
