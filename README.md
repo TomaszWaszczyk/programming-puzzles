@@ -10,3 +10,4 @@ console.log.call.apply(a => a, [1,2])
 
 https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced
 
+https://github.com/lydiahallie/javascript-questions
