@@ -120,3 +120,9 @@ const numbers = [1, 2, 3];
 const [ firstNumber, ...restOfTheNumbers ] = numbers;
 console.log(firstNumber, restOfTheNumbers);
 // 1 [ 2, 3 ]
+
+
+// 20
+// https://stackoverflow.com/questions/9384758/what-is-the-execution-context-in-javascript-exactly
+
+
