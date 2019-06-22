@@ -1,4 +1,4 @@
-# programmingExperiments
+# JavaScript training
 
 https://devhints.io/
 
@@ -13,3 +13,10 @@ https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced
 https://github.com/lydiahallie/javascript-questions
 
 https://github.com/jwasham/coding-interview-university
+
+# Frameworks
+
+## React
+
+https://reactpatterns.com/
+
