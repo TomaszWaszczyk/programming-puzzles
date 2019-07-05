@@ -126,3 +126,23 @@ console.log(firstNumber, restOfTheNumbers);
 // https://stackoverflow.com/questions/9384758/what-is-the-execution-context-in-javascript-exactly
 
 
+// 21
+// What is Tagged Template Literals? 
+
+// 22
+const ab = { a : 1, b : 2, c : 3};
+const {a, a : b, c, ...d} = ab;
+a = ?
+b = ?
+c = ?
+d = ?
+  
+  
+// 23
+f = (a = 1, b= 2, c=3) =>
+  console.log(a,b,c)
+
+f(undefined, null)
+
+
+// 24
