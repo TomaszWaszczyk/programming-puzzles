@@ -22,3 +22,6 @@ https://github.com/yangshun/front-end-interview-handbook/blob/master/questions/j
 
 https://reactpatterns.com/
 
+# Proposals
+
+https://github.com/tc39/proposals
