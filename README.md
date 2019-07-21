@@ -16,13 +16,21 @@ https://github.com/jwasham/coding-interview-university
 
 https://github.com/yangshun/front-end-interview-handbook/blob/master/questions/javascript-questions.md
 
+
+# V8
+
+https://v8.dev/blog
+
+
 # Frameworks
 
  Logging: loglevel or winston. 
 
+
 ## React
 
 https://reactpatterns.com/
+
 
 # Proposals
 
