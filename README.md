@@ -16,6 +16,8 @@ https://github.com/jwasham/coding-interview-university
 
 https://github.com/yangshun/front-end-interview-handbook/blob/master/questions/javascript-questions.md
 
+https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
+
 
 # V8
 
