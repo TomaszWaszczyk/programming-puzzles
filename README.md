@@ -45,3 +45,9 @@ https://github.com/tc39/proposals
 
 https://github.com/blockchainedindia/resources
 
+
+# Programming trends
+
+https://github.com/trending
+
+
