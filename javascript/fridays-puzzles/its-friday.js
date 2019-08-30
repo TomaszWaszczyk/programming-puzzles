@@ -150,3 +150,5 @@ f(undefined, null)
 
 
 // 25
+const nums = [1,2,3].push(4);
+console.log(nums)
