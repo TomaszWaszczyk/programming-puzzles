@@ -80,7 +80,6 @@ array.length = ?
 
 
 // 14
-<<<<<<< HEAD
 var a = ['one', 'two', 'three'];
 var b = ['one', 'two', 'three'];
 (a === b)
@@ -129,7 +128,7 @@ const result = cities.reduce((accumulator, item) => {
 }, {});
 
 console.log(result);
-=======
+
 var x = '5' + 2
 var y = '5' - 2
 
@@ -202,4 +201,3 @@ f(undefined, null)
 // 25
 const nums = [1,2,3].push(4);
 console.log(nums)
->>>>>>> bcbc27ee36aeeda6714b7b1c15d847ab38a5fbf2
