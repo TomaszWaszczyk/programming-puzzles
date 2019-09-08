@@ -77,3 +77,54 @@ for (let x of iterable) {
 // 13
 let array = [[]]
 array.length = ?
+
+
+// 14
+var a = ['one', 'two', 'three'];
+var b = ['one', 'two', 'three'];
+(a === b)
+
+// 15
+const cars = [
+  'Mazda', 
+  'Ford', 
+  'Renault', 
+  'Opel', 
+  'Mazda'
+]
+const uniqueWithArrayFrom = Array.from(new Set(cars));
+console.log(uniqueWithArrayFrom); // outputs ["Mazda", "Ford", "Renault", "Opel"]
+
+const uniqueWithSpreadOperator = [...new Set(cars)];
+console.log(uniqueWithSpreadOperator);// outputs ["Mazda", "Ford", "Renault", "Opel"]
+
+// 16 - merging objects
+const product = { name: 'Milk', packaging: 'Plastic', price: '5$' }
+const manufacturer = { name: 'Company Name', address: 'The Company Address' }
+
+const productManufacturer = { ...product, ...manufacturer };
+console.log(productManufacturer); 
+// outputs { name: "Company Name", packaging: "Plastic", price: "5$", address: "The Company Address" }
+
+// merging an array of objects into one
+const cities = [
+    { name: 'Paris', visited: 'no' },
+    { name: 'Lyon', visited: 'no' },
+    { name: 'Marseille', visited: 'yes' },
+    { name: 'Rome', visited: 'yes' },
+    { name: 'Milan', visited: 'no' },
+    { name: 'Palermo', visited: 'yes' },
+    { name: 'Genoa', visited: 'yes' },
+    { name: 'Berlin', visited: 'no' },
+    { name: 'Hamburg', visited: 'yes' },
+    { name: 'New York', visited: 'yes' }
+];
+
+const result = cities.reduce((accumulator, item) => {
+  return {
+    ...accumulator,
+    [item.name]: item.visited
+  }
+}, {});
+
+console.log(result);
