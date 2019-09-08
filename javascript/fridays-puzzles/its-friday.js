@@ -80,6 +80,7 @@ array.length = ?
 
 
 // 14
+<<<<<<< HEAD
 var a = ['one', 'two', 'three'];
 var b = ['one', 'two', 'three'];
 (a === b)
@@ -128,3 +129,77 @@ const result = cities.reduce((accumulator, item) => {
 }, {});
 
 console.log(result);
+=======
+var x = '5' + 2
+var y = '5' - 2
+
+
+// 15
+interface X {
+  a: number
+  b: string
+}
+
+type X = {
+  a: number
+  b: string
+};
+
+
+// 16
+(61453).toString(16)
+
+
+// 17
+const obj1 = { firstName: 'Foo', age: 22 };
+const obj2 = { lastName: 'Bar', gender: 'M' };
+const newObj = { ...obj1, ...obj2, planet: 'Earth' };
+console.log(newObj)
+// { firstName: 'Foo', age: 22, lastName: 'Bar', gender: 'M', planet: 'Earth' }
+
+
+// 18 - https://codeburst.io/a-simple-guide-to-destructuring-and-es6-spread-operator-e02212af5831
+const address = [221, 'Baker Street', 'London'];
+const [ houseNo, , city ] = address;
+console.log(houseNo, city)
+// 221 'London'
+
+
+// 19
+const numbers = [1, 2, 3];
+const [ firstNumber, ...restOfTheNumbers ] = numbers;
+console.log(firstNumber, restOfTheNumbers);
+// 1 [ 2, 3 ]
+
+
+// 20
+// https://stackoverflow.com/questions/9384758/what-is-the-execution-context-in-javascript-exactly
+
+
+// 21
+// What is Tagged Template Literals? 
+
+// 22
+const ab = { a : 1, b : 2, c : 3};
+const {a, a : b, c, ...d} = ab;
+a = ?
+b = ?
+c = ?
+d = ?
+  
+  
+// 23
+f = (a = 1, b= 2, c=3) =>
+  console.log(a,b,c)
+
+f(undefined, null)
+
+
+// 24
+// div vs span
+
+
+// 25
+const nums = [1,2,3].push(4);
+console.log(nums)
+>>>>>>> bcbc27ee36aeeda6714b7b1c15d847ab38a5fbf2
