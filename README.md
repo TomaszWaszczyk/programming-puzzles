@@ -51,3 +51,8 @@ https://github.com/blockchainedindia/resources
 https://github.com/trending
 
 
+# Others
+
+https://www.codewars.com/
+
+
