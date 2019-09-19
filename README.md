@@ -55,4 +55,8 @@ https://github.com/trending
 
 https://www.codewars.com/
 
+# Humour
+
+https://pdos.csail.mit.edu/archive/scigen/
+
 
