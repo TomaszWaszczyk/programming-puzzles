@@ -53,7 +53,9 @@ https://github.com/trending
 
 # Others
 
-https://www.codewars.com/
+https://www.codewars.com
+
+https://www.ravelry.com
 
 # Humour
 
