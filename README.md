@@ -57,6 +57,8 @@ https://www.codewars.com
 
 https://www.ravelry.com
 
+https://www.codechef.com
+
 # Humour
 
 https://pdos.csail.mit.edu/archive/scigen/
