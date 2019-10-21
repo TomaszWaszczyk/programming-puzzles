@@ -20,6 +20,8 @@ https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
 
 https://www.weekendjs.com/
 
+https://www.oi.edu.pl/l/40/
+
 
 # V8
 
