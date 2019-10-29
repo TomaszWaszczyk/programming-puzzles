@@ -22,6 +22,7 @@ https://www.weekendjs.com/
 
 https://www.oi.edu.pl/l/40/
 
+https://github.com/denysdovhan/wtfjs
 
 # V8
 
