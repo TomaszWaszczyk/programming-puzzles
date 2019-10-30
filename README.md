@@ -24,6 +24,8 @@ https://www.oi.edu.pl/l/40/
 
 https://github.com/denysdovhan/wtfjs
 
+https://www.testdome.com/questions
+
 # V8
 
 https://v8.dev/blog
