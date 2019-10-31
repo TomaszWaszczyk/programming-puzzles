@@ -66,6 +66,8 @@ https://www.ravelry.com
 
 https://www.codechef.com
 
+https://www.hackerrank.com/mailing
+
 # Humour
 
 https://pdos.csail.mit.edu/archive/scigen/
