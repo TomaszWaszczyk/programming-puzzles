@@ -4,7 +4,9 @@ https://devhints.io/
 
 http://martinfowler.com/eaaCatalog/
 
-https://codingpuzzles.com/
+https://codingpuzzles.com
+
+https://30secondsofinterviews.org
 
 console.log.call.apply(a => a, [1,2])
 
