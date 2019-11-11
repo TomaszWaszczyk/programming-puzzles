@@ -28,6 +28,8 @@ https://github.com/denysdovhan/wtfjs
 
 https://www.testdome.com/questions
 
+https://github.com/JSsnippets/JavaScript-snippets
+
 # V8
 
 https://v8.dev/blog
