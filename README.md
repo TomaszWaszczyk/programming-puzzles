@@ -30,6 +30,8 @@ https://www.testdome.com/questions
 
 https://github.com/JSsnippets/JavaScript-snippets
 
+www.codewars.com
+
 # V8
 
 https://v8.dev/blog
