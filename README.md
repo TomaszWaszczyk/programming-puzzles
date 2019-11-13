@@ -76,4 +76,8 @@ https://www.hackerrank.com/mailing
 
 https://pdos.csail.mit.edu/archive/scigen/
 
+# ML
+
+https://numer.ai/
+
 
