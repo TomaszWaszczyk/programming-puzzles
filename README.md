@@ -32,6 +32,8 @@ https://github.com/JSsnippets/JavaScript-snippets
 
 www.codewars.com
 
+https://exploringjs.com/es6/index.html
+
 # V8
 
 https://v8.dev/blog
@@ -63,8 +65,6 @@ https://github.com/trending
 
 
 # Others
-
-https://www.codewars.com
 
 https://www.ravelry.com
 
