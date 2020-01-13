@@ -80,6 +80,8 @@ https://tools.ietf.org/html/
 
 !! Enki https://github.com/enkidevs/curriculum
 
+https://coderpad.io/
+
 # Humour
 
 https://pdos.csail.mit.edu/archive/scigen/
