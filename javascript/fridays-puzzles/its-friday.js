@@ -1,4 +1,5 @@
 // https://stackoverflow.com/questions/34242588/is-it-a-in-place-sort
+// https://stackoverflow.com/questions/18983138/callback-after-all-asynchronous-foreach-callbacks-are-completed
 // https://github.com/denysdovhan/wtfjs
 // 0
 -!~ -~1 
