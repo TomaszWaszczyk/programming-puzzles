@@ -67,7 +67,9 @@ https://github.com/blockchainedindia/resources
 
 https://github.com/trending
 
-https://news.ycombinator.com/
+https://news.ycombinator.com
+
+https://research.hackerrank.com
 
 
 # Others
