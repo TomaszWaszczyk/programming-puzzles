@@ -86,6 +86,8 @@ https://tools.ietf.org/html/
 
 https://coderpad.io/
 
+Logical thinking: https://brilliant.org/practice/joy-of-problem-solving-logical-reasoning/
+
 # Humour
 
 https://pdos.csail.mit.edu/archive/scigen/
