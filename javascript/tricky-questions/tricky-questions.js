@@ -1,4 +1,5 @@
 // 1. https://stackoverflow.com/questions/48270127/can-a-1-a-2-a-3-ever-evaluate-to-true
+// https://www.freecodecamp.org/news/4-main-differences-between-foreach-and-map/
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#Loose_equality_using
 
 // const a = {
