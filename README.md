@@ -88,6 +88,8 @@ https://coderpad.io/
 
 Logical thinking: https://brilliant.org/practice/joy-of-problem-solving-logical-reasoning/
 
+https://app.codility.com/
+
 # Humour
 
 https://pdos.csail.mit.edu/archive/scigen/
