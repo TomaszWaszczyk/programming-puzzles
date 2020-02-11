@@ -90,6 +90,8 @@ Logical thinking: https://brilliant.org/practice/joy-of-problem-solving-logical-
 
 https://app.codility.com/
 
+https://codeforces.com/
+
 # Humour
 
 https://pdos.csail.mit.edu/archive/scigen/
