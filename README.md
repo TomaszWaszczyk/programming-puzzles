@@ -32,6 +32,8 @@ https://github.com/JSsnippets/JavaScript-snippets
 
 www.codewars.com
 
+https://www.codewars.com/kata/544aed4c4a30184e960010f4/train/javascript
+
 https://exploringjs.com/es6/index.html
 
 https://www.cheaki.com/nodejs/nodejs-interview-questions
