@@ -104,4 +104,6 @@ https://pdos.csail.mit.edu/archive/scigen/
 
 https://numer.ai/
 
+# Math
 
+Matematyka i algorytmika: https://wydawnictwa.ptm.org.pl/index.php/wiadomosci-matematyczne/index
