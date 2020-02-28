@@ -40,6 +40,8 @@ https://www.cheaki.com/nodejs/nodejs-interview-questions
 
 https://processing.org/examples/follow3.html
 
+https://codingcompetitions.withgoogle.com/hashcode/archive
+
 # V8
 
 https://v8.dev/blog
