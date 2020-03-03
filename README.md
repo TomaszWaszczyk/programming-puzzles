@@ -96,6 +96,8 @@ https://app.codility.com/
 
 https://codeforces.com/
 
+https://github.com/jwasham/coding-interview-university
+
 # Humour
 
 https://pdos.csail.mit.edu/archive/scigen/
