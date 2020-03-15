@@ -109,3 +109,11 @@ https://numer.ai/
 # Math
 
 Matematyka i algorytmika: https://wydawnictwa.ptm.org.pl/index.php/wiadomosci-matematyczne/index
+
+# Algo
+
+## Raft
+
+http://thesecretlivesofdata.com/raft/
+
+https://raft.github.io/#raftscope
