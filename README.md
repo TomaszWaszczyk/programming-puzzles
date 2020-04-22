@@ -86,6 +86,8 @@ https://www.hackerrank.com/
 
 https://codingcompetitions.withgoogle.com/codejam
 
+https://codingcompetitions.withgoogle.com/kickstart
+
 https://tools.ietf.org/html/
 
 !! Enki https://github.com/enkidevs/curriculum
