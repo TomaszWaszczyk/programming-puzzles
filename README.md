@@ -82,7 +82,9 @@ https://www.ravelry.com
 
 https://www.codechef.com
 
-https://www.hackerrank.com/mailing
+https://www.hackerrank.com/
+
+https://codingcompetitions.withgoogle.com/codejam
 
 https://tools.ietf.org/html/
 
