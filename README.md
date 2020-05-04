@@ -102,6 +102,8 @@ https://codeforces.com/
 
 https://github.com/jwasham/coding-interview-university
 
+https://puzzling.stackexchange.com/
+
 # Humour
 
 https://pdos.csail.mit.edu/archive/scigen/
