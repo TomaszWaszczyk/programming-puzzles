@@ -46,6 +46,8 @@ https://processing.org/examples/follow3.html
 
 https://codingcompetitions.withgoogle.com/hashcode/archive
 
+https://www.codingame.com
+
 # V8
 
 https://v8.dev/blog
