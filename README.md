@@ -112,6 +112,8 @@ https://github.com/jwasham/coding-interview-university
 
 https://puzzling.stackexchange.com/
 
+https://www.geeksforgeeks.org/program-to-check-the-validity-of-a-password/
+
 # Humour
 
 https://pdos.csail.mit.edu/archive/scigen/
