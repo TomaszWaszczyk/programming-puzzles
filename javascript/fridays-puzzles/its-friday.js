@@ -204,5 +204,26 @@ f(undefined, null)
 const nums = [1,2,3].push(4);
 console.log(nums)
 
+
 // 26
 [1,2,3].filter((v) => !!v)
+
+
+// 27
+Write a function for adding 2 numbers that are passed in one by one.
+
+function sum(a) {
+  // ... ?
+}
+sum(10)(20) // returns 30
+
+Answer:
+function sum(a){
+
+    return function (b){
+
+        return a + b
+
+    }
+
+}
