@@ -227,3 +227,7 @@ function sum(a){
     }
 
 }
+
+
+async is risky
+defer - no race conditions
