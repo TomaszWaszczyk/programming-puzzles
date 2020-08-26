@@ -4,6 +4,8 @@ https://github.com/adnanaziz/EPIJudge/tree/master/epi_judge_python
 
 # JavaScript training
 
+https://learnjswith.me/javascript-fizzbuzz/
+
 https://devhints.io/
 
 http://martinfowler.com/eaaCatalog/
