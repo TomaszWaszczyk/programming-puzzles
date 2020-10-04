@@ -4,6 +4,8 @@ https://github.com/adnanaziz/EPIJudge/tree/master/epi_judge_python
 
 # JavaScript training
 
+https://blog.bitsrc.io/understanding-currying-in-javascript-ceb2188c339
+
 https://learnjswith.me/javascript-fizzbuzz/
 
 https://devhints.io/
