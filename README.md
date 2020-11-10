@@ -136,6 +136,8 @@ Matematyka i algorytmika: https://wydawnictwa.ptm.org.pl/index.php/wiadomosci-ma
 
 # Algo
 
+https://github.com/geekxh/hello-algorithm
+
 ## Raft
 
 http://thesecretlivesofdata.com/raft/
