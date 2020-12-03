@@ -4,6 +4,24 @@ https://puzzling.stackexchange.com/
 
 https://github.com/adnanaziz/EPIJudge/tree/master/epi_judge_python
 
+```python
+crack_the_code.py
+
+code = ["7","2","k","3","k","7","j","6"] 
+
+cypher = { "a":"G", "5":"X", "b":"S", "6":"P", ";":"C", "7":"T", "d":"I",
+           "8":"-", "e":"B", "9":"R", "f":"_", "0":"F", "g":"J", "1":"N",
+           "h":"D", "2":"H", "i":"U", "3":"M", "j":"A", "4":"Q", "k":"E",
+           "#":"V", "&":"K", "%":"S", "$":"L", "@":"O" }
+
+word = ""
+
+for i in code:
+        word+=cypher[i]
+
+print(word)
+```
+
 # JavaScript training
 
 https://www.30secondsofcode.org/
