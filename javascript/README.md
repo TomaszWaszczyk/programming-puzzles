@@ -43,6 +43,48 @@ http://rxmarbles.com/#interval
 
 https://github.com/i0natan/nodebestpractices
 
+
+
+---
+
+1. Co będzie wyświetlone w konsoli?
+
+function test(a,b){
+
+  a += " i costam";
+
+  
+
+  b.second = "2";
+
+  
+
+  return a;
+
+}
+
+var a = "costam";
+
+var b = {first: "1"};
+
+console.log(a,b);
+
+test(a,b);
+
+console.log(a,b);
+
+2. Kolejność w konsoli?
+
+console.log(1);
+
+setTimeout(function(){console.log(2)}, 1000);
+
+setTimeout(function(){console.log(3)}, 0);
+console.log(4);
+
+---
+
+
 # Closure
 
 https://medium.freecodecamp.com/lets-learn-javascript-closures-66feb44f6a44#.i41pdefx5
