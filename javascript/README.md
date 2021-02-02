@@ -47,6 +47,10 @@ https://github.com/i0natan/nodebestpractices
 
 ---
 
+Komunikacja synchroniczna jest wtedy gdy gdy wysyłam informację i spodziewam się informacji o jej dostarczeniu przez klienta i przetwarzam dalej
+
+Komunikacja asynchroniczna- zbieram paczkę informacji i je przetwarzam ale nie zatrzymuję procesu przetwarzania na produkcji
+
 1. Co będzie wyświetlone w konsoli?
 
 function test(a,b){
