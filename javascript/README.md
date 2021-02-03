@@ -18,6 +18,7 @@ https://github.com/azat-co/cheatsheets/tree/master/es6
 
 https://codesandbox.io
 
+https://www.digitalocean.com/community/tutorials/js-big-o-notation
 
 ## Clean code
 
