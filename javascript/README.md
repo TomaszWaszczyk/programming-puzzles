@@ -66,6 +66,120 @@ memoization javscript
 
 ---
 
+Bug #1
+```
+function createPopups(accessKey, text, relatedFieldId) {
+  var formField = relatedFieldId !== "#" ? relatedFieldId : null;
+  
+  if (accessKey && text === accessKey) {
+    createPopup("label", accessKey);
+  }
+
+  addAccessKeyPopupFormFields(formField[0]);
+}
+
+```
+Answer (line 8)
+
+Look at the last line of the function: we are accessing an element with index zero on formField. This variable is initialised with either relatedFieldId or null. In the latter case the index access will crash the execution.
+Bug #2
+
+```
+function calculateOpenState() {
+  var rank = 0;
+  var today = new Date();
+  var start = new Date(this.dateStarted);
+  var end = new Date(this.dateCompleted);
+
+  if (start <= today && today <= end) {
+    rank = 5;
+  } else {
+    if (today < start) {
+      rank = 1;
+    } else if (today > end) {
+      rank = 2;
+    } else {
+      rank = 3;
+    }
+  }
+  return { state: STATES[rank], rank: rank };
+}
+
+```
+Answer (line 15)
+
+The code rank = 3; is never executed as the condition on line 12 today > end is always evaluates to true.
+Bug #3
+
+```
+function roundMinAndMax(max, min, units, roundingUnit) {
+  if (this.alwaysShowZero()) {
+    max = 0;
+    if (this.useIntegers()) {
+      Math.ceil(roundingUnit);
+      min = max - roundingUnit * units;
+    } else {
+      min = max - Math.ceil(roundingUnit * units * 100000) / 100000;
+    }
+  }
+  this.dataMaximum = max;
+  this.dataMinimum = min;
+}
+
+```
+Answer (line 5)
+
+Look at Math.ceil, it’s used 2 times in this function, but one time the return value is not used.
+Bug #4
+
+```
+function hideAll(name, config) {
+  if (name && Y.Transition) {
+    if (typeof config === "function") {
+      config = null;
+    }
+
+    if (!name.push) {
+      if (typeof config === "function") {
+        config = name;
+      }
+      name = "HIDE_TRANSITION";
+    }
+    this.transition(name, config);
+  } else {
+    this.hide();
+  }
+  return this;
+}
+
+```
+Answer (line 9)
+
+The second time we evaluate a condition typeof config === ‘function’(line 8), this condition will be always false, as on line 3 there is the same check, and when it’s true the value of config changed to null. That way we have a dead code at line 9.
+Bug #5
+
+```
+function comparator(a, b) {
+  var aLastAccessTime = a.get("lastAccessTime");
+  var bLastAccessTime = b.get("lastAccessTime");
+  if (aLastAccessTime !== bLastAccessTime) {
+    return bLastAccessTime - aLastAccessTime;
+  } else if (aLastAccessTime && !bLastAccessTime) {
+    return -1;
+  } else if (!aLastAccessTime && bLastAccessTime) {
+    return 1;
+  }
+  return 0;
+}
+
+```
+Answer (lines 7 and 9)
+
+
+Both conditions aLastAccessTime && !bLastAccessTime and !aLastAccessTime && bLastAccessTime are never true and a code next to them is never executed. We reach these conditions only if the first condition aLastAccessTime !== bLastAccessTime is false, thus aLastAccessTime and bLastAccessTime are strictly equal.
+
+---
+
 !!!!!!!!!!! https://stackoverflow.com/jobs/251072/cryptoeconomic-software-engineer-chorus-one?med=clc
 https://stackoverflow.com/jobs/266624/backend-developer-nodejs-male-female-diverse-akelius-gmbh
 https://stackoverflow.com/jobs/274390/react-engineer-building-real-time-user-interface-goldman-sachs
