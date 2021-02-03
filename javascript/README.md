@@ -66,6 +66,37 @@ memoization javscript
 
 ---
 
+!!!!!!!!!!! https://stackoverflow.com/jobs/251072/cryptoeconomic-software-engineer-chorus-one?med=clc
+https://stackoverflow.com/jobs/266624/backend-developer-nodejs-male-female-diverse-akelius-gmbh
+https://stackoverflow.com/jobs/274390/react-engineer-building-real-time-user-interface-goldman-sachs
+
+
+https://stackoverflow.com/jobs/277612/react-developer-remote-x-team
+https://www.toptal.com/react/interview-questions
+http://www.geeksforgeeks.org/amazon-interview-experience-set-169-sde-2/
+http://www.geeksforgeeks.org/job-sequencing-problem-set-1-greedy-algorithm/
+
+Co zrobić żeby frontend nie miał klucza - zrobić serwer proxy który te klucze będzie mieć API
+
+
+https://tylermcginnis.com/react-interview-questions/
+https://github.com/Applifier/web-frontend-test
+https://spin.atomicobject.com/2016/02/16/how-javascript-promises-work/
+https://github.com/viraptor/reverse-interview
+https://github.com/jwasham/coding-interview-university
+
+
+https://www.incapptic.com/careers
+
+
+curring java script
+```
+shurtcuts code refactoring
+```
+https://www.edureka.co/blog/interview-questions/react-interview-questions/
+
+---
+
 Podstawy działania strumieni
 1. ObservableObserverSubscriptionCallback vs Promise vs Observable
 2. Tworzenie strumieni
