@@ -126,6 +126,8 @@ https://github.com/ossu/computer-science
 
 # Others
 
+Problem 5 filozofów
+
 https://www.ravelry.com
 
 https://www.codechef.com
