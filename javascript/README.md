@@ -51,6 +51,11 @@ Find the sum of least simultaneous values of all I-expressions pairs made of dis
 
 ---
 
+https://github.com/macbem/10CloudsCodingTask
+https://www.edureka.co/blog/interview-questions/react-interview-questions/
+
+---
+
 1. When comparing use === instead of ==2. Never use var use let instead3. Use const instead of let4. Always use semicolons (;)5. Naming conventions in JavaScript6. Use template literals when contacting strings7. Use ES6 arrow function where possible8. Always use curly braces around control structures9. Also, make sure in JavaScript that the curly brace starts on the same line with space in between.10. Try and reduce nesting11. Try and come up with a “max” line length for files and functions12. Lowercase file names13. Use default parameters where possible14. Switch statements should use break and have default15. Use named exports16. Do not use wildcard imports17. Use shortcuts for Booleans18. Try and avoid unneeded ternary statements19. Only use one variable per declaration
 
 ---
