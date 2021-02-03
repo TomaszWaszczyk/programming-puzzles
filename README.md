@@ -2,6 +2,8 @@ https://puzzling.stackexchange.com/
 
 https://adventofcode.com/
 
+https://designpatternsgame.com/
+
 # Python
 
 https://github.com/adnanaziz/EPIJudge/tree/master/epi_judge_python
