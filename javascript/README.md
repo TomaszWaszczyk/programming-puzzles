@@ -97,6 +97,27 @@ https://www.edureka.co/blog/interview-questions/react-interview-questions/
 
 ---
 
+https://github.com/MaximAbramchuck/awesome-interview-questions
+https://dev.to/aershov24/7-hardest-nodejs-interview-questions--answers-3lje
+https://github.com/xsolve-pl/react-recruitment-app
+
+https://github.com/ritave/Lunyr-Recuitment
+https://kariera.coi.gov.pl/pl/programista-front-end,ja,201
+https://www.fullstack.cafe/JavaScript
+https://www.fullstack.cafe/blog/advanced-javascript-interview-questions
+https://www.fullstack.cafe/blog/javascript-es6-es2015-interview-questions
+https://www.fullstack.cafe/blog/20-typescript-interview-questions-and-answers-in-2018
+Event loop, next tick, SQL, prototypy, var, let, process, nadpisywanie require, asynchronicznność, mikroserwisy, design patterns, singleton w JS, observer - publisher, event cuptering, 
+https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95
+
+nexttick+nodejs process nexttick
+let var in for
+forEach, map, reduce, filter
+throttling debounce
+Zaawansowany JavaScript - #1/4 Execution Context
+
+---
+
 Podstawy działania strumieni
 1. ObservableObserverSubscriptionCallback vs Promise vs Observable
 2. Tworzenie strumieni
