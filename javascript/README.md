@@ -35,6 +35,8 @@ https://flow.org/
 
 ! ! ! ! https://github.com/shri/JSDoc-Style-Guide https://stackoverflow.com/questions/6460604/how-to-describe-object-arguments-in-jsdoc
 
+https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/
+
 # Design patterns
 
 https://yetanotherwannabedev.github.io
