@@ -55,6 +55,12 @@ Find the sum of least simultaneous values of all I-expressions pairs made of dis
 
 ---
 
+Implementing a debounce from scratch is a common interview question. It tests your understanding of intermediate and advanced JavaScript concepts such as: async programming, callbacks, scope, and closures. It is also a practical solution used in real-world applications to improve performance and demonstrates that you understand the tools to write good code for real users.
+
+memoization javscript
+
+---
+
 Podstawy działania strumieni
 1. ObservableObserverSubscriptionCallback vs Promise vs Observable
 2. Tworzenie strumieni
