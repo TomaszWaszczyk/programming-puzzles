@@ -75,6 +75,79 @@ https://blog.usejournal.com/i-failed-my-effing-coding-interview-ab720c339c8a
 
 ---
 
+position relative, obsolute, fixed
+
+Jak zablokować przejście z jednej strony na drugą mając uprawnienia w AngularJS?
+
+Event delegation
+
+reusable component - jak pisać, biblioteki
+
+Box Sizing
+
+Closure
+
+const array push - możliwość dodania elementu do tablicy const
+
+call bind apply
+
+3 promise na raz rozwiązać
+
+var f = function() { var a = 'test'; alert(this.a); }
+ja miałem coś takiego, pytanie brzmiało co się wyświetli w alercie
+
+ code review (przykład z html - znajdowanie literówek i głupotek typu <center>, inline style)
+
+position: absolute, relative - różnica + reszta
+
+walidacja pól w html5
+
+nowosci w css
+
+zalety korzystania z preprocesorów styli
+
+różnice między sass/less, ew. stylus (woleli sass/less)
+
+czy można pisać pętle w preprocesorach ("może można, ale nie widzę zastosowania" zdawało się być trafną odpowiedzią)
+
+build automation - gulp, grunt - ogólnie
+
+ecmascript - let, zasieg w js (scope)
+
+typy zmiennych w js
+
+metody które można wywołać na array (push, splice)
+
+metody które można wywołać na obiekcie
+
+roznica miedzy == a === (twarde/miękkie porównanie)
+
+git rebase
+
+git reset
+
+git stash
+
+Jak byś założył własne repo na gicie od zera komendami (git init)
+
+git checkout (przejście na inny branch, tworzenie nowego)
+
+kolejność ważności css (inline, element, klasa, id) + !important
+
+
+
+
+abstrakty wiesz co to?
+Validation.composer?
+Po co robix index.ts w modulach?
+roznica miedzy splice a slice?
+jak najszybciej z stringa zzrobic number?
+ w czym jest roblem z this? w normalnych funkcjachm,a w arrow function ni
+
+https://code.tutsplus.com/tutorials/fully-understanding-the-codethiscode-keyword--net-21117
+
+---
+
 Implementing a debounce from scratch is a common interview question. It tests your understanding of intermediate and advanced JavaScript concepts such as: async programming, callbacks, scope, and closures. It is also a practical solution used in real-world applications to improve performance and demonstrates that you understand the tools to write good code for real users.
 
 memoization javscript
