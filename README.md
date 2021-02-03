@@ -112,6 +112,15 @@ OmiseGO: https://github.com/omise/challenges/pull/4#event-1519086445
 
 https://github.com/blockchainedindia/resources
 
+Tendermint
+Monax
+Plasma - skalowalność
+symulator oderbook
+Merkle tree
+AVL
+Geth
+Etherdelta - jak działa.
+
 
 # Programming trends
 
