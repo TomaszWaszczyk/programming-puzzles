@@ -94,6 +94,12 @@ https://v8.dev/blog
 
 https://reactpatterns.com/
 
+---
+
+# Web Tasks ## Task #1 Create simple dropdown from this design https://dribbble.com/shots/3398444-Dropdown, using "vanilla" HTML/CSS(some small JS, if it's needed). ## Task #2 Create a simple component with animation like this: http://take.ms/s2gYg ## Task #3 Create simple component, which allows drag&drop grey rectangle into the blue stroked area http://take.ms/j7gwr
+
+---
+
 
 # Proposals
 
@@ -101,6 +107,8 @@ https://github.com/tc39/proposals
 
 
 # Blockchain
+
+OmiseGO: https://github.com/omise/challenges/pull/4#event-1519086445
 
 https://github.com/blockchainedindia/resources
 
