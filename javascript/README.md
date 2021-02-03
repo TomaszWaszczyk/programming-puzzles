@@ -43,7 +43,30 @@ http://rxmarbles.com/#interval
 
 https://github.com/i0natan/nodebestpractices
 
+---
 
+1. We define the I operator as the function I(x,y)=(1+x+y)2+y−x and I-expressions as arithmetic expressions built only from variables names and applications of I. A variable name may consist of one or more letters. For example, the three expressions x, I(x,y), and I(I(x,ab),x) are all I-expressions.
+For two I-expressions e1 and e2 such that the equation e1=e2 has a solution in non-negative integers, we define the least simultaneous value of e1 and e2 to be the minimum value taken by e1 and e2 on such a solution. If the equation e1=e2 has no solution in non-negative integers, we define the least simultaneous value of e1 and e2 to be 0. For example, consider the following three I-expressions: A=I(x,I(z,t))B=I(I(y,z),y)C=I(I(x,z),y) The least simultaneous value of A and B is 23, attained for x=3,y=1,z=t=0. On the other hand, A=C has no solutions in non-negative integers, so the least simultaneous value of A and C is 0. The total sum of least simultaneous pairs made of I-expressions from {A,B,C} is 26.
+Find the sum of least simultaneous values of all I-expressions pairs made of distinct expressions from file I-expressions.txt (pairs (e1,e2) and (e2,e1) are considered to be identical). Give the last nine digits of the result as the answer.
+
+---
+
+1. When comparing use === instead of ==2. Never use var use let instead3. Use const instead of let4. Always use semicolons (;)5. Naming conventions in JavaScript6. Use template literals when contacting strings7. Use ES6 arrow function where possible8. Always use curly braces around control structures9. Also, make sure in JavaScript that the curly brace starts on the same line with space in between.10. Try and reduce nesting11. Try and come up with a “max” line length for files and functions12. Lowercase file names13. Use default parameters where possible14. Switch statements should use break and have default15. Use named exports16. Do not use wildcard imports17. Use shortcuts for Booleans18. Try and avoid unneeded ternary statements19. Only use one variable per declaration
+
+---
+
+Podstawy działania strumieni
+1. ObservableObserverSubscriptionCallback vs Promise vs Observable
+2. Tworzenie strumieni
+   Własny strumień: new Observable((oserver) => {})Wbudowane kreatory strumieni: of, from, fromEvent, timer…
+3. Jak działają operatory
+   Użycie metody pipe()Podstawowe operatory: map, filter, reduce, switchMap
+4. Observable i Observer w jednym
+   SubjectBehavior SubjectReplay Subject
+5. MultiCasting
+   Cold i Hot ObservableOperatory publish, share, multicast
+6. Praktyczne zastosowanie operatorów.
+   debounceTimemergedelayswitchMaptakeUntil
 
 ---
 
