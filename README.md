@@ -105,6 +105,7 @@ Typy zadań:
 - wyświetl liczby od 0 do 100 - jeśli jest podzielna przez 3 to coś tam, przez 5 to coś tam, przez 3 i 5 coś innego
 - rekurencyjnie wstaw do Stringa znaki "*" jeśli obok siebie stoją 2 te same znaki
 - posortuj liczby biorąc pod uwagę liczbę jedynek w zapisie binarnym danej liczby
+- problem selektów N+1
 
 # Proposals
 
