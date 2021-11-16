@@ -28,6 +28,8 @@ print(word)
 
 # JavaScript training
 
+https://github.com/Asabeneh/30-Days-Of-JavaScript
+
 https://www.30secondsofcode.org/
 
 https://blog.bitsrc.io/understanding-currying-in-javascript-ceb2188c339
