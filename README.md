@@ -6,6 +6,8 @@ https://designpatternsgame.com/
 
 https://github.com/jwasham/coding-interview-university
 
+https://code.golf
+
 # Python
 
 https://github.com/adnanaziz/EPIJudge/tree/master/epi_judge_python
